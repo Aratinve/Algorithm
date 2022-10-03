@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.*;
 
-import javax.xml.crypto.Data;
-
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 public class SumArrayTest {

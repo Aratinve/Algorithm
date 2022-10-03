@@ -13,8 +13,8 @@ public class AreNumbersEqualTest {
 
     @Test
     public void testAreNumbersEqualHappyPath() {
-        int a = 3;
-        int b = 3;
+        int a = 89;
+        int b = 89;
         int expectedResult = 0;
 
         int actualResult = areNumEqual.areNumbersEqualAlgorithm(a, b);
@@ -22,9 +22,10 @@ public class AreNumbersEqualTest {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
     public void testAreNumbersEqualNegativeHappyPath() {
-        int a = -133;
-        int b = -123;
+        int a = -89;
+        int b = 89;
         int expectedResult = -1;
 
         int actualResult = areNumEqual.areNumbersEqualAlgorithm(a, b);
@@ -32,9 +33,10 @@ public class AreNumbersEqualTest {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
     public void testAreNumbersEqualPositiveHappyPath() {
-        int a = 1282;
-        int b = 123;
+        int a = 89;
+        int b = -89;
         int expectedResult = 1;
 
         int actualResult = areNumEqual.areNumbersEqualAlgorithm(a, b);

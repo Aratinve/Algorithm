@@ -1,12 +1,12 @@
 public class MinMaxAve {
 
-    public int[] minMaxAveAlgorithm(int[] numbers, int firstI, int secondI) {
-        if(numbers.length != 0 && firstI >= 0 && secondI >= firstI
-                && firstI < numbers.length && secondI < numbers.length)
+    public int[] minMaxAveAlgorithm(int[] numbers, int begin, int end) {
+        if(numbers.length != 0 && begin >= 0 && end >= begin
+                && end < numbers.length)
         {
-            int[] result = {numbers[firstI], numbers[firstI], numbers[firstI]};
+            int[] result = {numbers[begin], numbers[begin], numbers[begin]};
 
-            for (int i = firstI + 1; i <= secondI; i++) {
+            for (int i = begin + 1; i <= end; i++) {
                 if (result[0] > numbers[i]) {
                     result[0] = numbers[i];
                 }
@@ -16,7 +16,7 @@ public class MinMaxAve {
 
                 result[2] += numbers[i];
             }
-            result[2] = result[2] / (secondI - firstI + 1) ;
+            result[2] = result[2] / (end - begin + 1) ;
 
             return result;
         } else {

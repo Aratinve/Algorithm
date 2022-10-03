@@ -11,7 +11,7 @@ public class AscendingSequenceTest {
     }
 
     @Order(1)
-    @RepeatedTest(50)
+    @Test
     public void testAscendingSequenceHappyPathPositiveNumber() {
         int start = 0;
         int end = 5;
@@ -24,7 +24,7 @@ public class AscendingSequenceTest {
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
-   @Order(2)
+    @Order(2)
     @Test
     public void testAscendingSequenceHappyPathNegativeNumber() {
         //-10, -9, -8, -7

@@ -34,7 +34,6 @@ public class PeakElement {
 
                 return new int[]{numbers[1]};
             }
-
         } else if(numbers.length == 1){
 
             return numbers;
@@ -42,6 +41,5 @@ public class PeakElement {
 
             return new int[]{};
         }
-
     }
 }
