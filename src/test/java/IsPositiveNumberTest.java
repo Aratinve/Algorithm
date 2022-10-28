@@ -44,7 +44,7 @@ public class IsPositiveNumberTest {
         int a = Integer.MAX_VALUE;
         boolean expectedResult = true;
 
-        boolean actualResult = isPositiveNumber.isPositiveNumberAlgorithm(a+a);
+        boolean actualResult = isPositiveNumber.isPositiveNumberAlgorithm(a);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }

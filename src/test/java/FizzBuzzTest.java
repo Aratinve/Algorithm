@@ -14,7 +14,7 @@ public class FizzBuzzTest {
     @Test
     public void testFizzBuzzAlgorithmHappyPath() {
         int a = 15;
-        String expectedResult = "Good number";
+        String expectedResult = "Good Number";
 
         String actualResult = fizzBuzz.fizzBuzzAlgorithm(a);
 

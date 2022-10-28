@@ -17,22 +17,28 @@ public class PeakElementTest {
 
         int[] actualResult = peakElement.peakElementAlgorithm(numbers);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testPeakElementNoPeak() {
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 8};
+        int[] numbers = {1, 2, 3, 3, 5, 6, 7, 8, 8};
 
         int[] expectedResult = {};
 
         int[] actualResult = peakElement.peakElementAlgorithm(numbers);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
     public void testPeakElementNegativeNumbers() {
+        int[] numbers = {};
 
+        int[] expectedResult = {};
+
+        int[] actualResult = peakElement.peakElementAlgorithm(numbers);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 }

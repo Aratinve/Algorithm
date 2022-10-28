@@ -17,7 +17,7 @@ public class IntersectionTest {
 
         int[] actualResult = interSec.intersectionAlgorithm(first, second);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class IntersectionTest {
 
         int[] actualResult = interSec.intersectionAlgorithm(first, second);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class IntersectionTest {
 
         int[] actualResult = interSec.intersectionAlgorithm(first, second);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -50,7 +50,7 @@ public class IntersectionTest {
 
         int[] actualResult = interSec.intersectionAlgorithm(first, second);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -61,7 +61,7 @@ public class IntersectionTest {
 
         int[] actualResult = interSec.intersectionAlgorithm(first, second);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -72,7 +72,7 @@ public class IntersectionTest {
 
         int[] actualResult = interSec.intersectionAlgorithm(first, second);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -83,6 +83,6 @@ public class IntersectionTest {
 
         int[] actualResult = interSec.intersectionAlgorithm(first, second);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 }

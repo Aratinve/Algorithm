@@ -4,7 +4,6 @@ import org.junit.jupiter.api.*;
 
 public class SortArrayTest {
 
-
     SortArray sortArr;
 
     @BeforeEach
@@ -18,13 +17,13 @@ public class SortArrayTest {
         int[] input = {3, 1, 4, 2, 5, 0};
         int[] expectedResult = {0, 1, 2, 3, 4, 5};
 
-        int[] actualResult = sortArr.sortArraySelectionAlgorithm(input);
+        int[] actualResult = sortArr.sortArrayQuickAlgorithmIncreased(input);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
 
-        actualResult = sortArr.sortArrayQuickAlgorithmIncreased(input);
+        actualResult = sortArr.sortArraySelectionAlgorithm(input);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Order(2)
@@ -33,9 +32,13 @@ public class SortArrayTest {
         int[] input = {-7, -3};
         int[] expectedResult = {-7, -3};
 
-        int[] actualResult = sortArr.sortArraySelectionAlgorithm(input);
+        int[] actualResult = sortArr.sortArrayQuickAlgorithmIncreased(input);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+
+        actualResult = sortArr.sortArraySelectionAlgorithm(input);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -43,9 +46,13 @@ public class SortArrayTest {
         int[] input = {0, 0};
         int[] expectedResult = {0, 0};
 
-        int[] actualResult = sortArr.sortArraySelectionAlgorithm(input);
+        int[] actualResult = sortArr.sortArrayQuickAlgorithmIncreased(input);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+
+        actualResult = sortArr.sortArraySelectionAlgorithm(input);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     @Test
@@ -53,9 +60,27 @@ public class SortArrayTest {
         int[] input = {};
         int[] expectedResult = {};
 
-        int[] actualResult = sortArr.sortArraySelectionAlgorithm(input);
+        int[] actualResult = sortArr.sortArrayQuickAlgorithmIncreased(input);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+
+        actualResult = sortArr.sortArraySelectionAlgorithm(input);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testSortArrayMaxInt() {
+        int[] input = {Integer.MAX_VALUE, Integer.MAX_VALUE, 4, 29, Integer.MAX_VALUE, 678, Integer.MAX_VALUE};
+        int[] expectedResult = {4, 29, 678, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE};
+
+        int[] actualResult = sortArr.sortArrayQuickAlgorithmIncreased(input);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+
+        actualResult = sortArr.sortArraySelectionAlgorithm(input);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 }
 
